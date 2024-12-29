@@ -1,0 +1,548 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: cursive;
+}
+/* Scroll behavior for smooth scrolling between sections */
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* Navbar styles */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: #ececec;
+}
+/* Logo section */
+.logo{
+    padding-left: 2em;
+}
+.logo-text{
+    font-size: 2em;
+}
+/* Menubar styles */
+.menubar{
+    width: 45%;
+    margin-left: 8.5em;
+    background-color: #ececec;
+    border-radius: 8px;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+}
+.list-items a{
+    color: #333;
+    font-size: 0.8em;
+    padding: 10px 20px;
+    display: block;
+    transition: 0.4s;
+}
+/* Hover effects for menu items */
+.list-items a:hover{
+    color: white;
+    background-color: #784bf5;
+    text-decoration: none;
+}
+.list-items a.active {
+    color: white;
+    background-color: #132e80; 
+}
+/* Shopping cart styles */
+.cart{
+    padding-right: 2em;
+    position: relative;
+}
+.cart .number-of-items{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    left: 18px;
+    top: -7px;
+    background: #f09d51;
+    height: 20px;
+    width: 20px;
+    border-radius: 7px;
+}
+.number-of-items .noi{
+    font-size: 0.7em;
+}
+.fa-shopping-cart{
+    font-size: 1.5em;
+    cursor: pointer;
+}
+/* Hamburger menu (hidden by default on desktop) */
+.burger{
+    height: 28px;
+    width: 32px;
+    display: none;
+}
+.layer1,.layer2,.layer3{
+    background: black;
+    height: 4px;
+    margin-top: 4px;
+    width: 100%;
+    border-radius: 10px;
+}
+/* Banner section styling */
+.section1{
+    height: calc(100vh - 10vh);
+    width: 100%;
+    background: url("./Assets/digitization-1599552_1920.jpg") center center/cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* Banner text and button */
+.section1 .banner{
+    height: 170px;
+    width: 600px;
+    background: rgba(255, 255, 255, 0.7);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    z-index: 8;
+}
+
+.banner h1{
+    font-size: 2em;
+}
+
+.banner a{
+    display: flex;
+    justify-content: center;
+    padding: 1em 2.5;
+    font-size: 0.8em;
+    color: white;
+    background: #6082f3;
+    transition: all 0.3s;
+}
+/* Hover effect for banner button */
+.banner a:hover{
+    background: #05be33;
+}
+
+.section2.title{
+    text-align: center;
+}
+.section2.title h1{
+    font-size: 1.8em;
+    margin: 1.3em;
+}
+/* Products section title styling */
+#products .title hr{ 
+    height: 10px; 
+    border-width: 2px;
+    color: black; 
+    background-color: red; 
+    margin: 10px 0;
+}
+
+ #products .title h1{ 
+    font-size: 5em;
+    color: #070606; 
+    text-align: center;
+}
+/* Product grid layout */
+.product{
+    margin: 0 5em auto;
+    max-width: 1300px;
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+/* Product card styles */
+.product-card{
+    text-align: center;
+    position: relative;
+    max-width: 350px;
+    overflow: hidden;
+}
+/* Product image and hover effect */
+.product-card img{
+    height: 300px;
+    width: 300px;
+    transition: 0.3s linear;
+}
+/* Product name and pricing styles */
+.product-name,.product-pricing{
+    margin: 0.3em;
+}
+.product-pricing{
+    color: #f09d51;
+}
+/* Add to cart button style */
+.add-to-cart{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0.2em 1em;
+    height: 30px;
+    background: #f09d51;
+    position: absolute;
+    right: 0;
+    transform: translate(100%);
+    bottom: 80px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+/* Hover effect for add-to-cart button */
+.product-card:hover .add-to-cart{
+    transform: translate(0%);
+}
+.product-card:hover img{
+    opacity: 0.7;
+}
+.add-to-cart:hover{
+    color: black;
+}
+/* Sidebar menu (hidden by default) */
+.menu-sidebar{
+    display: none;
+}
+/* Cart sidebar (hidden by default) */
+.cart-sidebar{
+    background: #ececec;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 450px;
+    height: 100vh;
+    z-index: 10;
+    transition: all 0.3s linear;
+    transform: translateX(100%);
+    overflow: scroll;
+}
+.cart-sidebar .cart{
+    padding: 0;
+}
+/* Close cart button */
+.cart .close-cart{
+    font-size: 1.3em;
+    padding: 1em;
+    cursor: pointer;
+}
+.fa-times{
+    margin-top: 0.5em;
+}
+/* Cart content styles */
+.cart h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    font-family: Verdana;
+}
+.cart-product {
+    display: flex;                      
+    justify-content: space-between;     
+    align-items: center;                
+    padding: 10px;
+    border-bottom: 1px solid #ddd;      
+    margin-bottom: 10px;                
+}
+/* Cart product name styling */
+.cart-product-name {
+    font-size: 1.1em;                   
+    font-weight: bold;                 
+    color: #333;                        
+    margin-bottom: 5px;                 
+}
+/* Cart product image styling */
+.cart-product .product-image img{
+    width: 100px;                       
+    height: 80px;                       
+    object-fit: cover;                  
+    margin-right: 15px;                 
+    border-radius: 5px;
+}
+/* Cart product content layout */
+.cart-product-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+/* Plus-minus quantity control */
+.plus-minus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f09d51;
+    font-size: 1.5em;
+    cursor: pointer;
+    gap: 5px; 
+}
+.plus-minus i { 
+    cursor: pointer;
+    font-size: 1.3em;
+}
+.no-of-items {
+    font-size: 1.1em;            
+    padding: 0 10px;             
+    font-weight: bold;           
+}
+/* Hover effect for plus-minus icons */
+.plus-minus:hover i {
+    color: #132e80;
+}
+/* Total sum display in cart */
+.total-sum{
+    text-align: center;
+    margin: 1em 0  0.5em 0;
+}
+/* Clear cart button */
+.clear-cart{
+    text-align: center;
+}
+.clear-cart .btn{
+    background-color: #f09d51;
+    color: white;
+    border: 1px solid white;
+    padding: 0.5em 1.7em;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+/* Hover effect for clear cart button */
+.clear-cart .btn:hover{
+    border: 1px solid #f09d51;
+    background: transparent;
+    color: black;
+}
+/* Overlay for modals */
+.overlay{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: #f09d51;
+    opacity: 0.3;
+    transition: all 0.3s linear;
+}
+
+.none{
+    display: none;
+}
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px){
+    .logo{
+        padding-left: 0;
+    }
+    .cart{
+        padding-right: 2em;
+    }
+    .menubar{
+        display: none;
+    }
+    .burger{
+        margin-left: 2em;
+        display: block;
+    }
+    .section1 .banner h1{
+        font-size: 1.5em;
+    }
+    .banner a{
+        font-size: 0.6em;
+        padding: 1em 2em;
+    }
+    .section2 .title h1{
+        font-size: 1.5em;
+    }
+    .menu-sidebar{
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 11;
+        background: #ececec;
+        overflow: hidden;
+        transform: translate(-100%);
+        transition: 0.3s linear;
+    }
+    .menu-menubar{
+        display: flex;
+        height: 80%;
+        justify-content: center;
+    }
+    .menu-list{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .menu-sidebar .close-menu{
+        position: absolute;
+        right: 30px;
+        font-size: 1.4em;
+    }
+    .menu-list-items a{
+        color: #f09d51;
+    }
+    .menu-list-items a:hover{
+        color: #f09d51;
+    }
+}
+/* Media query for screens smaller than 480px (e.g., mobile devices) */
+@media screen and (max-width: 480px) {
+    *{
+        font-size: 16px;
+    }
+    .section1 .banner{
+        width: 280px;
+        height: 100px;
+    }
+    .section1 .banner h1{
+        font-size: 1.2em;
+    }
+    /* Hamburger menu styling for mobile */
+    .burger{
+        margin-left: 1em;
+        display: block;
+        width: 30px;
+    }
+    .cart-sidebar{
+        width: 100%;
+    }
+    
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Footer sections layout */
+.footer-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.footer-section {
+    flex: 1 1 200px; 
+    margin: 10px;
+}
+.footer-section h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.footer-section p, .footer-section ul {
+    font-size: 0.9em;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin: 5px 0;
+}
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.footer hr {
+    margin: 20px 0;
+    border-color: #444;
+}
+.footer-copy {
+    font-size: 0.8em;
+}
+/* Register form */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+/* Modal content styling */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px; 
+    border-radius: 5px; 
+}
+/* Close modal button styling */
+.close-modal {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close-modal:hover,.close-modal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.form-section {
+    margin-bottom: 20px; 
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.btn {
+    background-color: #f09d51;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #e08b3c;
+}

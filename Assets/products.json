@@ -1,0 +1,79 @@
+{
+    "items": [
+        {
+            "sys": {"id": "1"},
+            "fields": {
+                "title": "Python Programming",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/121px-Python-logo-notext.svg.png"
+            }
+            }
+            }
+            }
+        },
+        {
+            "sys": {"id": "2"},
+            "fields": {
+                "title": "C Programming",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "Assets/c.jpeg"}}}
+            }
+        },
+        {
+            "sys": {"id": "3"},
+            "fields": {
+                "title": "C++ Programming",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "Assets/c++.png"}}}
+            }
+        },
+        {
+            "sys": {"id": "4"},
+            "fields": {
+                "title": "PHP Programming",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "Assets/php.png"}}}
+            }
+        },
+        {
+            "sys": {"id": "5"},
+            "fields": {
+                "title": "JAVA Programming",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "Assets/java.jpg"}}}
+            }
+        },
+        {
+            "sys": {"id": "6"},
+            "fields": {
+                "title": "Web Development for Beginners",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "Assets/c++.png"}}}
+            }
+        },
+        {
+            "sys": {"id": "7"},
+            "fields": {
+                "title": "Python Programming",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "Assets/c++.png"}}}
+            }
+        },
+        {
+            "sys": {"id": "8"},
+            "fields": {
+                "title": "Python Programming",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "Assets/c++.png"}}}
+            }
+        },
+        {
+            "sys": {"id": "9"},
+            "fields": {
+                "title": "Python Programming",
+                "price": 123.99,
+                "image": {"fields": {"file": {"url": "Assets/c++.png"}}}
+            }
+        }
+    ]
+}
