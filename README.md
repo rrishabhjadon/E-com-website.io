@@ -1,25 +1,14 @@
-## Comfort Learning E-Commerce Website
+## Learning Us E-Commerce Website
 
-**Welcome to the Comfort Learning E-Commerce Website repository! This project is an online platform designed to offer various programming courses. The website features a user-friendly interface, a shopping cart, dynamic product listings, and user authentication.**
+**Welcome to the  Learning us E-Commerce Website repository! This project is an online platform designed to offer various programming courses. The website features a user-friendly interface, a shopping cart, dynamic product listings, and user authentication.**
 
-The Comfort Learning E-commerce website is a platform that offers a wide range of educational resources and courses for individuals of all ages. The website is designed to provide a comfortable and engaging learning experience for its users.
-
-## Link for Project Website
-
- - [E-Com-Website](https://dilipkumar005.github.io/E-Com-Website/)
-
-# E-Com-Website
-
-## Live Demo
-You can view the live demo of the E-Com-Website here: [E-Com-Website](https://dilipkumar005.github.io/E-Com-Website/)
-
+The Learning us E-commerce website is a platform that offers a wide range of educational resources and courses for individuals of all ages. The website is designed to provide a comfortable and engaging learning experience for its users.
 ## Table of Contents
 
 - [Features](#features)  
 - [Technologies Used](#technologies-used)  
 - [Installation](#installation)  
 - [Usage](#usage)
-- [E-Com-Website][E-Com-Website](https://dilipkumar005.github.io/E-Com-Website/)
 - [Contributing](#contributing)  
 - [License](#license)  
 - [Contact Information](#contact-information)  
@@ -38,15 +27,6 @@ You can view the live demo of the E-Com-Website here: [E-Com-Website](https://di
 - **CSS:** For styling and layout.  
 - **JavaScript:** For interactivity and dynamic content.  
 - **Font Awesome:** For icons. 
-
-## Installation
-
-To run this project locally, follow these steps:
-
-1. **Clone the repository:**
-
-git clone https://github.com/dilipkumar005/E-Com-Website.git
-
 2. **Navigate to the project directory:**
 
     cd E-Com-Website
@@ -84,11 +64,11 @@ Contributions are welcome! If you have suggestions for improvements or new featu
 ## Contact Information
 For any inquiries, please contact:
 
-**Email:** support@comfortlearning.com
+**Email:** support@learningus.com
 
 **Phone:** +91 1234 567 890
 
-Thank you for visiting the Comfort Learning E-Commerce Website repository! Happy Learning!.
+Thank you for visiting the Learning us E-Commerce Website repository! Happy Learning!.
 
 
 ### Key Changes:
@@ -109,6 +89,6 @@ Thank you for visiting the Comfort Learning E-Commerce Website repository! Happy
 
 ---
 
-Thank you for your interest in the Comfort Learning E-Commerce Website! We hope you find it useful and engaging. If you have any questions or feedback, feel free to reach out through the contact information provided above.
+Thank you for your interest in the Learning us E-Commerce Website! We hope you find it useful and engaging. If you have any questions or feedback, feel free to reach out through the contact information provided above.
 
 Happy Learning!
